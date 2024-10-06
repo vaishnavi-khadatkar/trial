@@ -1,0 +1,680 @@
+
+:root {
+  font-size: 0.7rem;
+}
+
+body {
+font-family: "Itim", cursive;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+ 
+}
+.page1
+{
+  
+  background-image: url('../images/admission\ img/Desktop - 27(1).png');
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: -20px;
+}
+header {
+  box-shadow: 0 2px 4px rgba(131, 129, 129, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white; /* Add background color to make it visible */
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: auto;
+}
+
+header .logo img {
+  width: 220px;
+  margin-left: 20px;
+ 
+}
+
+.effect {
+  margin-left: 200px;
+}
+
+nav.effect ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+nav.effect ul li {
+  position: relative;
+}
+
+nav.effect ul li a {
+  text-decoration: none;
+  color: rgb(41, 75, 101);
+  font-size: 2rem;
+  padding: 5px 0;
+  font-family: "Itim", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition: color 0.3s;
+}
+
+nav.effect ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+nav.effect ul li a:hover {
+  color: #908e8e;
+}
+
+nav.effect ul li a:hover::after {
+  width: 100%;
+}
+
+
+
+
+/* page 2 */
+.banner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 60px 20px; /* Adjusted padding to account for the fixed navbar */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+/* Keyframes for fade-in animations from different directions */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 2;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 2;
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.fade-in {
+  opacity: 0; /* Start with elements hidden */
+  animation-fill-mode: forwards; /* Ensure element stays visible after animation */
+  animation-duration: 1s; /* Duration of the animation */
+  animation-timing-function: ease-in-out; /* Easing function */
+}
+
+.admission-info.fade-in {
+  animation-name: fadeInLeft;
+}
+
+.admission-info img.fade-in {
+  animation-name: fadeInBottom;
+}
+
+.form-background.fade-in {
+  animation-name: fadeInRight;
+}
+
+.admission-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Add space between the admission info and form */
+}
+.admission-info h1 {
+  margin-top: 10px;
+  color: #071952;
+}
+.admission-info img {
+  margin-top: -10px;
+  /* height:auto; */
+  width: 100%;
+  margin-left: -10px;
+}
+.admission-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.admission-info h2 {
+  font-size: 2rem;
+  color: #071952; /* Dark blue text */
+  margin-top: 5px;
+}
+
+.admission-info p {
+  line-height: 1.5em;
+  text-align: justify;
+  color: rgba(135, 148, 152, 0.844);
+  margin-top: 10px;
+}
+
+.form-background {
+  /* background-color: #f1baf1aa; Semi-transparent background color */
+  border: 1px solid #e394ac; /* Accent color */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px #ff487fa3;
+  max-width: 500px;
+  height: max-content;
+  flex: 1;
+  min-width: 300px;
+  background-size: cover;
+  color: rgba(135, 148, 152, 0.844);
+  margin-top: 110px;
+}
+
+.form-background h2 {
+  font-size: 1.5rem;
+  color: #071952; /* Dark blue */
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #ff4880; /* Blue button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #ec7498; /* Lighter blue on hover */
+}
+
+
+/* page 3 */
+.programs {
+  /* padding: 40px 20px; */
+  margin: 0;
+  padding: 0;
+  margin-top: -50px;
+  text-align: center;
+  background-color: #f7c1da;
+  border-radius: 35px;
+  /* background-image: url(Desktop\ -\ 4\ \(2\).png); */
+  width: 100%;
+  height: 550px;
+}
+
+.programs h2 {
+  font-size: 2rem;
+  color: #071952; /* Dark blue */
+  /* margin-bottom: 30px; */
+}
+
+.program-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* height: 200px; */
+}
+
+.card {
+  background: #fff; /* White background for cards */
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 4px 8px rgba(232, 226, 226, 0.1);
+  transition: transform 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: 55%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #ff4880; /* pink text */
+  margin: 15px 0 10px;
+}
+
+.card p {
+  color: rgba(135, 148, 152, 0.844);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #f7c1da;
+  background-color: #ffffff;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 2;
+    transform: translateX(0);
+  }
+}
+/* Animation classes */
+.fade-in {
+  opacity: 0; /* Start with elements hidden */
+  animation-fill-mode: forwards; /* Ensure element stays visible after animation */
+  animation-duration: 1s; /* Duration of the animation */
+  animation-timing-function: ease-in-out; /* Easing function */
+}
+
+.program-cards.fade-in {
+  animation-name: fadeInRight;
+}
+
+
+/* page 4 */
+
+.why-us {
+  width: 100%;
+  /* height: 150%; Full width */
+  margin: 0 auto; /* Center align */
+  padding: 50px 30px;
+  background-image: url('../images/admission\ img/Desktop-4(13)png');
+  text-align: center;
+  color: #071952; /* Light text */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+.why-us h2 {
+  color: #071952; /* Dark blue */
+  font-size: 2rem;
+}
+.reasons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reason-card {
+  background: #fff; /* White background for cards */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+}
+
+.reason-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.reason-card h3 {
+  font-size: 1.5rem;
+  color: #ff4880; /* Dark blue */
+  margin: 10px 0;
+}
+
+.reason-card p {
+  color: rgba(135, 148, 152, 0.844);
+}
+
+.reason-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px #ee6a91;
+  background-color: rgba(243, 159, 95, 0.127);
+}
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 2;
+    transform: translateX(0);
+  }
+}
+/* Animation classes */
+.fade-in {
+  opacity: 0; /* Start with elements hidden */
+  animation-fill-mode: forwards; /* Ensure element stays visible after animation */
+  animation-duration: 1s; /* Duration of the animation */
+  animation-timing-function: ease-in-out; /* Easing function */
+}
+
+.reason-card.fade-in {
+  animation-name: fadeInBottom;
+}
+
+
+
+/* page faq */
+.faq-head h1{
+    font-size: 35px;
+    text-align: center;
+    color: #071952;
+    margin-top: 50px;
+  }
+  #faq {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url('../images/franchise\ img/Desktop - 15 (18).png');
+    margin: 20px auto;
+    max-width: 1400px;
+    padding: 20px;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+    z-index: 0; /* Ensures the content is above the background */
+  }
+  #faq::before {
+    content: '';
+    position: absolute;
+    top: -50px; /* Adjust to move the wave up or down */
+    left: 0;
+    width: 100%;
+    /* height: 100px; Adjust height for wave depth */
+    transform: scaleY(1.5); /* Adjust to deepen the wave */
+    z-index: -1; /* Ensure the pseudo-element is behind the FAQ items */
+  }
+  .faq-column {
+    flex: 1;
+    margin: 10px 20px;
+    min-width: 300px;
+  }
+  .faq-item {
+    /* margin-bottom: 15px; */
+    /* margin-top: 0px; */
+    padding: 15px;
+    border-bottom: 1px solid #cecccc;
+    background-color: transparent /* Add slight transparency */
+    /* transition: background-color 0.3s ease; */
+  }
+  .question {
+    font-size: 1.5em;
+    color: #071952;
+    cursor: pointer;
+    transition: color 0.3s ease, ;
+    
+  }
+  .question:hover {
+    color: #ff4880;
+   
+  }
+  .answer {
+    display: none;
+    font-size: 1.2em;
+    color: rgba(135, 148, 152, 0.844);
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  .answer-visible {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+
+/* page circle */
+.circle{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; Center horizontally and vertically */
+   height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background-image:linear-gradient(rgba(53, 43, 43, 0.432),rgba(114, 99, 99, 0.267)),url('../images/admission\ img/page7\(1\).png');
+background-repeat: no-repeat; 
+}
+
+.counter-container {
+  text-align: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.counter {
+  font-size: 35px;
+  font-weight: bold;
+  border: 2px solid #ffffff66;
+  height:220px;
+  width: 220px;
+  border-radius: 200px;
+  color: #ffffff66;
+  margin-top: 130px;
+  margin-left: 80px;
+  display: flex;
+justify-content: center;
+align-items: center;
+  text-align: center;
+}
+.counter-container h3
+{
+  font-size: 25px;
+  color: #ffffff66;
+  margin-left: 9px;
+ 
+}
+.counter-container p
+{
+  font-size: 15px;
+  color: #ffffff66;
+  font-family: Arial, sans-serif;
+}
+
+/* page awards */
+
+.award {
+ 
+  background-image: url('../images/about\ us\ img/Desktop - 28 (3).png');
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  padding-bottom: 20px;
+  
+}
+.award .content5 h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  word-spacing: 0.9rem;
+  color: rgb(41, 75, 101);
+  animation: slideDown 1s ease-in-out;
+}
+.container5 {
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  background-color: #d8c0d1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+  animation: slideUp 1s ease-in-out;
+}
+.certificate {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.certificate.active {
+  display: flex;
+  animation: fadeIn 1s ease-in-out;
+}
+.certificate img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.certificate h2 {
+  font-size: 1.8rem;
+  color: #ff4880;
+  margin: 0 0 10px 0;
+}
+.certificate p {
+  font-size: 1.2rem;
+  color: rgba(59, 104, 113, 0.73);
+  margin: 0;
+}
+
+
+
+/* page footer */
+
+
+.footer{
+  background: #e1bad6;
+  text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.2rem;
+  color: #ff4880;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+  font-size: 1.3rem;
+  
+  color: rgba(59, 104, 113, 0.73);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.3rem;
+  
+  color: rgba(59, 104, 113, 0.73);
+  padding: 1rem 0;
+  text-decoration: none;
+}
+
+.footer .box-container .box a:hover{
+  color: #ff4880;
+}
+
+.footer .box-container .box a i{
+  padding-right: .5rem;
+  color: #ff4880;
+}
+
+.footer .credit{
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: .1rem solid rgba(0,0,0,.3);
+  text-align: center;
+  font-size: 1.3rem;
+  
+  color: rgba(59, 104, 113, 0.73);
+}
+
+.footer .credit span{
+  color: #ff4880;
+}

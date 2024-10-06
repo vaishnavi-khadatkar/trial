@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+header {
+  box-shadow: 0 2px 4px rgba(131, 129, 129, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white; /* Add background color to make it visible */
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: auto;
+}
+
+header .logo img {
+  width: 220px;
+  margin-left: 20px;
+ 
+}
+
+.effect {
+  margin-left: 200px;
+}
+
+nav.effect ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+nav.effect ul li {
+  position: relative;
+}
+
+nav.effect ul li a {
+  text-decoration: none;
+  color: rgb(41, 75, 101);
+  font-size: 2rem;
+  padding: 5px 0;
+  font-family: "Itim", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition: color 0.3s;
+}
+
+nav.effect ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+nav.effect ul li a:hover {
+  color: #908e8e;
+}
+
+nav.effect ul li a:hover::after {
+  width: 100%;
+}
+
+:root {
+  font-size: 0.7rem;
+}
+
+body {
+font-family: "Itim", cursive;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+ 
+}
+/* .page1
+{
+  background-image: url(/public/images/about\ us\ img/Desktop\ -\ 27\ \(1\).png);
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: -20px;
+} */
+header {
+  box-shadow: 0 2px 4px rgba(131, 129, 129, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white; /* Add background color to make it visible */
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: auto;
+}
+
+header .logo img {
+  width: 220px;
+  margin-left: 20px;
+ 
+}
+
+.effect {
+  margin-left: 200px;
+}
+
+nav.effect ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+nav.effect ul li {
+  position: relative;
+}
+
+nav.effect ul li a {
+  text-decoration: none;
+  color: rgb(41, 75, 101);
+  font-size: 2rem;
+  padding: 5px 0;
+  font-family: "Itim", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition: color 0.3s;
+}
+
+nav.effect ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+nav.effect ul li a:hover {
+  color: #908e8e;
+}
+
+nav.effect ul li a:hover::after {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Franchise header section */
+@keyframes slideInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.animate-left {
+  animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.animate-right {
+  animation: slideInRight 1.5s ease-out forwards;
+}
+
+/* .delay-1.5s {
+  animation-delay: 1.5s;
+} */
+
+.franchise-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  /* margin-top: 5px; */
+}
+
+.franchise-info {
+  flex: 1;
+  max-width:600px;
+}
+
+.franchise-info h1 {
+  font-size: 2rem;
+  color: #071952;
+ margin-left: 100px;
+  margin-top: -400px;
+}
+
+.franchise-info p {
+  color: rgba(135, 148, 152, 0.844);
+  line-height: 1.6;
+  text-align: justify;
+  margin-left: 30px;
+}
+.franchise-info .p1{
+  font-size: 25px;
+} 
+#c1{
+  width:1426px;
+  /* margin-top: 50px; */
+
+}
+
+.form-background {
+  border: 1px solid #e394ac; /* Accent color */
+  box-shadow: 0 2px 4px #ff487fa3;
+  padding: 20px;
+  border-radius: 15px;
+  width: 800px;
+  flex: 1;
+  margin-top: 50px;
+  color: rgba(135, 148, 152, 0.844);
+}
+
+.form-background h2 {
+  font-size: 1.5rem;
+  color: #071952;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #ff4880;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #ec7498; /* Lighter blue on hover */
+}
+
+/* Steps */
+.steps{
+  margin-top: 200px;
+}
+.steps h1{
+  text-align: center;
+  
+  font-size: 30px;
+  color: #071952;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+.steps img{
+  margin-top: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1.5s ease-out forwards;
+}
+.step-img1{
+  background-color: pink;
+  border-top-right-radius: 400px;
+  border-bottom-right-radius: 400px;
+  height: max-content;
+margin-left: -30px;
+  animation-delay: 0.5s;
+
+}
+.step-img2{
+  margin-bottom: 20px;
+  margin-left: 50px;
+  height: 400px;
+  width: 300px;
+  animation-delay: 2s;
+
+}
+/* Keyframes for animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* faq */
+.faq-head h1{
+  font-size: 35px;
+  text-align: center;
+  color: #071952;
+  margin-top: 50px;
+}
+#faq {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url('../images/franchise\ img/Desktop - 15 (18).png');
+  margin: 20px auto;
+  max-width: 1400px;
+  padding: 20px;
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+  z-index: 0; /* Ensures the content is above the background */
+}
+#faq::before {
+  content: '';
+  position: absolute;
+  top: -50px; /* Adjust to move the wave up or down */
+  left: 0;
+  width: 100%;
+  /* height: 100px; Adjust height for wave depth */
+  transform: scaleY(1.5); /* Adjust to deepen the wave */
+  z-index: -1; /* Ensure the pseudo-element is behind the FAQ items */
+}
+.faq-column {
+  flex: 1;
+  margin: 10px 20px;
+  min-width: 300px;
+}
+.faq-item {
+  /* margin-bottom: 15px; */
+  /* margin-top: 0px; */
+  padding: 15px;
+  border-bottom: 1px solid #cecccc;
+  background-color: transparent /* Add slight transparency */
+  /* transition: background-color 0.3s ease; */
+}
+.question {
+  font-size: 1.5em;
+  color: #071952;
+  cursor: pointer;
+  transition: color 0.3s ease, ;
+  
+}
+.question:hover {
+  color: #ff4880;
+ 
+}
+.answer {
+  display: none;
+  font-size: 1.2em;
+  color: rgba(135, 148, 152, 0.844);
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.answer-visible {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+/* Why choose us section */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.why-us {
+  /* width: 1600px; */
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-image: url('../images/franchise\ img/Desktop - 12 (24).png');
+  background-repeat: no-repeat;
+  background-size: 1650px;
+  text-align: center;
+  color: #071952;
+  box-sizing: border-box;
+}
+
+.why-us h2{
+  font-size: 35px;
+  margin-top: -20px;
+}
+.reasons {
+  display: flex;
+  justify-content: space-around;
+ 
+  flex-wrap: wrap;
+}
+
+.reason-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  gap: 15px;
+  /* padding: 10px; */
+  margin-top: 30px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.reason-card img {
+  width: 70px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.reason-card h3 {
+  font-size: 1.5rem;
+  color: #071952;
+  margin: 10px 0;
+}
+
+.reason-card p {
+  color: rgba(135, 148, 152, 0.844);
+}
+
+.reason-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: pulse 1s infinite;
+}
+
+
+
+/* page awards */
+
+.award {
+ 
+  background-image: url('../images/franchise\ img/Desktop - 28 (3).png');
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  padding-bottom: 20px;
+  
+}
+.award .content5 h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  word-spacing: 0.9rem;
+  color: rgb(41, 75, 101);
+  animation: slideDown 1s ease-in-out;
+}
+.container5 {
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  background-color: #d8c0d1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+  animation: slideUp 1s ease-in-out;
+}
+.certificate {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.certificate.active {
+  display: flex;
+  animation: fadeIn 1s ease-in-out;
+}
+.certificate img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.certificate h2 {
+  font-size: 1.8rem;
+  color: #ff4880;
+  margin: 0 0 10px 0;
+}
+.certificate p {
+  font-size: 1.2rem;
+  color: rgba(59, 104, 113, 0.73);
+  margin: 0;
+}
+
+
+
+/* page footer */
+
+
+.footer{
+  background: #e1bad6;
+  text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.2rem;
+  color: #ff4880;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+  font-size: 1.3rem;
+  
+  color: rgba(59, 104, 113, 0.73);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.3rem;
+  
+  color: rgba(59, 104, 113, 0.73);
+  padding: 1rem 0;
+  text-decoration: none;
+}
+
+.footer .box-container .box a:hover{
+  color: #ff4880;
+}
+
+.footer .box-container .box a i{
+  padding-right: .5rem;
+  color: #ff4880;
+}
+
+.footer .credit{
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: .1rem solid rgba(0,0,0,.3);
+  text-align: center;
+  font-size: 1.3rem;
+  
+  color: rgba(59, 104, 113, 0.73);
+}
+
+.footer .credit span{
+  color: #ff4880;
+}
